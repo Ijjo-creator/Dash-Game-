@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <style>
+   img {background:black;border-radius:50%}
+   input[required],input:required {border: 1px solid #c00}
+  body {align:left }
+  button:hover {background:blue}
+  a {padding:1em; text-decoration:none;color:white;border-radius:50%}
+  input {border-radius:10%}
+   
+  </style>
+</head>
+<body style="background:white">
+  <div style="background:blue;background-size:1em">
+    <a href="#">Homepage</a> 
+    <a href="#">Contact</a>
+    <a href="#">About us</a>
+  </div>
+  <h1 style="color:green;">
+    Xpert Music Webpage
+  </h1>
+  <img src="xpert.png" height="200" width="200" alt="Xpert">
+  <section style="background:grey;border-radius:5%">
+  <h2>Membership Form</h2>
+  <form action="xpert1.html" method="get" style="padding:1em">
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="name" required>
+    <div>
+      <label for="status">Status:</label>
+       <select id="gender">
+          <option value="education">Education</option>
+          <option selected>Married</option>
+          <option value="single">single</option>
+          <option value="searching">searching</option>
+       </select>
+     </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="emai" id="email" placeholder="your email" required>
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input type="number" id="name" name="name" min="1" max="25" step="4" required>
+    </div>
+    <div>
+      <label for="banana">Banana</label>
+      <input type="radio" name="banana" id="banana" required>
+    </div>
+    <div>
+      <label for="mango">Mango</label>
+      <input type="radio" name="banana" id="mango">
+    </div>
+    <div>
+      <label for="birthday">Birthday</label>
+      <input type="date" name="birthday" id="birthday">
+    </div>
+    <div>
+      <label for="upload">Upload</label>
+      <input type="file" name="upload" id="upload" accept="audio/*,video/*" multiple>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+    <div>
+      <label for="search">Search</label>
+      <input type="record" name="search" id="search">
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="How do you get to know us" maxlength="200"></textarea>
+    </div>
+    <div>
+   
+      <label for="country">Country:</label>
+      <input type="text" name="country" id="country" list="see">
+      <datalist id="see">
+        <option value="uganda">Uganda</option>
+        <option value="kenya">Kenya</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="burundi">Burundi</option>
+        <option value="rwanda">Rwanda</option>
+        <option value="south sudand">South Sudan</option>
+        
+      </datalist>
+    </div>
+  </form>
+  </section>
+  <h3>
+    Our social media
+  </h3>
+  <audio controls download>
+    
+    <source src="Breanda.mp3">
+  </audio>
+  <video src="love.mp4" height="200px" width="300px" poster="xpert.png" controls></video>
+  
+</body>
+</html>
